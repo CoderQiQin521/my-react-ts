@@ -8,14 +8,29 @@ interface Props {
 
 export default function Test(props: Props) {
   const [str, setStr] = useState('嘿嘿')
+  let [count, setCount] = useState(1)
   const { ee } = props
   useEffect(() => {
     console.log('useEffect')
-    setStr('useEffect')
+    // setStr('useEffect')
   }, [])
+
+  useEffect(() => {
+    console.log('更新啦')
+  }, [str])
+
   return (
     <div>
-      我是{str}test组件--{ee}
+      我是{str}test组件--{ee}--{count}
+      <button
+        onClick={() => {
+          // setStr('1321312')
+          console.log('count: ', count)
+          setCount((count += 1))
+        }}
+      >
+        按钮
+      </button>
     </div>
   )
 }
