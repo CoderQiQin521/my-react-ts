@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>{a}</p>
-        <Test ee="嘿嘿"></Test>
+        <Test ee={'安徽的静安寺'}></Test>
 
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <p>
