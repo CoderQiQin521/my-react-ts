@@ -1,5 +1,3 @@
-import { Direction } from 'readline'
-
 /**
  * 日期时间左边补零
  * @param num 可以是字符串和数字类型
@@ -24,8 +22,9 @@ export function createUser(
   return {}
 }
 
-// 泛型
+// TODO:函数重载
 
+// 泛型
 function test(a: string): string {
   return '泛型'
 }
@@ -33,6 +32,11 @@ function test(a: string): string {
 function test2<R>(a: R): R {
   return a
 }
-console.log(test('2342'))
+console.log(test2<String>('阿瑟的'))
+console.log(test('12312'))
 
-console.log(test2('sdfsdfsd'))
+function test3<T, U>(value: T, message: U): T {
+  return value
+}
+
+console.log(test3('阿斯达斯大神', 54645))

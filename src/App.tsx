@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
+import Test from './pages/Test'
+
 import { padZero, createUser } from './utils/utils'
 let a: string = 'hello typescript'
 console.log(padZero('9'))
@@ -13,9 +15,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>{a}</p>
-        <p>
+        <Test ee="嘿嘿"></Test>
+
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        {/* <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
@@ -25,7 +29,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   )
