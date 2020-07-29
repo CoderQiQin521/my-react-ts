@@ -5,6 +5,7 @@ export default function Test(props: any) {
   const [str, setStr] = useState('heiheiehieeieh')
   useEffect(() => {
     console.log('useEffect')
+    setStr('useEffect')
   }, [])
   return (
     <div>
