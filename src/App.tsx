@@ -1,7 +1,13 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
+import { padZero, createUser } from './utils/utils'
 let a: string = 'hello typescript'
+console.log(padZero('9'))
+console.log(padZero(11))
+console.log(padZero('23'))
+
+createUser('xiaoming', 30, 0, 'web')
 
 function App() {
   return (
